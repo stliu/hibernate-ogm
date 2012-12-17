@@ -6,8 +6,8 @@ env: MONGODB_HOSTNAME=127.0.0.1
 #     - openjdk6
 #     - oraclejdk7
 before_install: echo "before install"
-before_script: 
-    - echo "before script"
+install: 
+    - echo "install"
     - mvn install -DskipTests=true -s ./settings-example.xml
 script: 
     - echo "script"
