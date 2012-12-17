@@ -1,3 +1,8 @@
 language: java
 services: mongodb
 env: MONGODB_HOSTNAME=127.0.0.1
+jdk:
+    - openjdk7
+    - openjdk6
+    - oraclejdk7
+script: mvn clean test -s ./settings-example.xml
