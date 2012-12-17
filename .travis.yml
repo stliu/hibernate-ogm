@@ -1,0 +1,4 @@
+language: java
+services: mongodb
+env:
+	- MONGODB_HOSTNAME=127.0.0.1
